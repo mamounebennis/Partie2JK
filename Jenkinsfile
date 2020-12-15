@@ -3,19 +3,10 @@ pipeline{
   stages{
     stage('---clean---'){
     steps{
-      sh 'mvnw clean'
+      sh 'mvn clean'
      }
     }
-    stage('---test---'){
-    steps{
-      sh 'mvnw test'
-     }
-    }
-    stage('---package---'){
-    steps{
-      sh 'mvnw package'
-     }
-    }
+    
     
 }
 }
